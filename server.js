@@ -14,6 +14,8 @@ app.get("/video/:v", async (req, res) => {
     res.json(formats)
 })
 
-app.listen(9090, () => {
+const port = process.env.PORT || 4000
+
+app.listen(port, () => {
     console.log("Server working on port...")
 })
